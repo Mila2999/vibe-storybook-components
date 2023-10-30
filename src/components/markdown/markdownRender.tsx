@@ -1,6 +1,4 @@
-import { Markdown } from '@storybook/blocks';
-
-const MarkdownRender = () => {
-  return <Markdown>Title Text</Markdown>;
+const MarkdownRender = ({ children }) => {
+  return <div style={{ backgroundColor: `var(--sb-primary-background-color)` }}>{children}</div>;
 };
 export default MarkdownRender;
